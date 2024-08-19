@@ -1,29 +1,12 @@
 import React from "react";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { Todolist } from "./components/Todolist";
-import {Calculator} from "./components/Calculator";
-import "./style.css"
-import { Homepage } from "./components/Homepage";
+
 const router = createBrowserRouter([
-  {
-    path:  "/",
-    element:<Navbar/>,
-  },
   
   {
-    path:  "todolist",
-    element: <Todolist/>
+    path:  "sign-in",
+    element: <Signin/>
   },
-  {
-    path:  "calculator",
-    element: <Calculator/>
-  },
-  {
-    path:  "homepage",
-    element: <Homepage/>
-  },
-
   {
     path:  "*",
     element: <div>404 Not Found</div>,
