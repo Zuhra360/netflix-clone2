@@ -1,17 +1,8 @@
 import React from "react";
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
+import {router}  from "./Routes/routes.jsx";
 
-const router = createBrowserRouter([
-  
-  {
-    path:  "sign-in",
-    element: <Signin/>
-  },
-  {
-    path:  "*",
-    element: <div>404 Not Found</div>,
-  }
-]);
+
 export const App = () => {
   
   return <RouterProvider router={router} />;

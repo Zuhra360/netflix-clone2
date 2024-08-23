@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
@@ -116,4 +120,8 @@ nav button{
     cursor: pointer;
     padding: 15px 30px;
 }
-
+.signin{
+    position: relative;
+    z-index: 2; /* Make sure the content is above the overlay */
+    align-items:center;
+}
